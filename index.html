@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>15 Puzzle</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section>
+            <div id="puzzlePosition">
+                <table id = "myPuzzle">
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+            <div id=buttonPosition>
+                <div class="buttons">
+                    <button id="button1">Reset</button>
+                    <br>
+                    <button id="button2">Scramble</button>
+                </div>
+                <br>
+                <div class = "radioButtons">
+                    <form name = rButtons>
+                        <input type="radio" name = scramble_value value="low">Easy<br>
+                        <input type="radio" name = scramble_value value="medium" checked>Medium<br>
+                        <input type="radio" name = scramble_value value="high">Hard<br>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
