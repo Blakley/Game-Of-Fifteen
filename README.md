@@ -4,7 +4,7 @@
   <h3 align="center"> Image Rotation Game </h3>
 
   <p align="center">
-    A game based off the classic fifteen puzzle game
+    A game based off the classic fifteen puzzle game with matrix rotations
     <br />
     <a href=""><strong>Online Demo »</strong></a>
     <br />
