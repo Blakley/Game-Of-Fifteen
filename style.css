@@ -1,69 +1,279 @@
 
-/* table border*/
-table , td {
-    border: 1px solid black;
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
+header {
+    min-height: 100vh;
+    background-color: #42A5F5;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .ripple-1,
+  .ripple-2,
+  .ripple-3,
+  .ripple-4,
+  .ripple-5{
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    background-color: #fff;
+    border-radius: 20%;
+    transform: translate3d(-50%, 50%, 0);
+    animation-name: ripple;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    will-change: transform, opacity;
+  }
+  
+  .ripple-1{
+    animation-delay: 0;
+  }
+  
+  .ripple-2{
+    animation-delay: 1s;
+  }
+  
+  .ripple-3{
+    animation-delay: 2s;
+  }
+  
+  .ripple-4{
+    animation-delay: 3s;
+  }
+  
+  .ripple-4{
+    animation-delay: 4s;
+  }
+  
+  .ripple-5{
+    animation-delay: 5s;
+  }
+  
+  main {
+    height: 5000px;
+    background-color: #f7f7f7;
+  }
+  
+  @keyframes ripple{
+    0%{
+      transform: translate3d(-50%, 50%, 0) scale(0);
+      opacity: .33;
+    }
+    100%{
+      transform: translate3d(-50%, 50%, 0) scale(2000);
+      opacity: 0;
+    }
+  }
+  
+body  {
+	background-size: 400% 400%;
+    font-family: 'Comfortaa', cursive;
+    background: #3399ff;
+    overflow: hidden;
 }
 
-/* element(s) placement */
-section {
-    padding-left: 55px;
-    padding-top: 55px;
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    height: 70px;
+    background: #3e8da8;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    z-index: 99;
 }
 
-/* table positioning */
-#puzzlePosition {
-    height: 250px;
-    width: 450px;
-    display: inline-block;
+.navbar {
+    margin-left: 36%;
+    margin-top: 1%;
 }
 
-/* cell padding */
-th, td { padding: 40px; }
+.title a {
+    font-size: 40px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
 
-/* cell spacing */
+.puzzle_position {
+    transform: translate(0%, 35%);
+    margin-left: 30%;
+}
+
 table { border-collapse: separate; border-spacing: 5px; }
 
-/* cell text styling */
+table {
+    border-spacing: 20px;
+    border-collapse: separate;
+}
+
 td {
-    font-size: 15px;
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+}
+
+th, td { padding: 60px; }
+
+td {
+    font-size: 25px;
     font-weight: bold;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.459);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    color: whitesmoke;
 }
 
-/* cell-hover & button-hover styling */
-td:hover, #button1:hover, #button2:hover {
-    background-color: #87A280;
-    /* color: white; */
-}
-
-/* cell-clicking styling */
 td:active {
     background-color: gray;
     color: white;
 }
 
-/* button positioning */
-#buttonPosition {
-    display: inline-block;
+button {
+    display: block;
 }
 
-/* button styling */
-.buttons button {
-    background-color: white;
-    border: 1px solid gray;
-    color: black;
-    box-shadow: 0px 1px 4px -2px #333;
-    display: block; /* stack buttons */
-    padding: 10px 24px;
+.puzzle_buttons {
+    transform: translate(75%, -130%);
+}
+
+.btns {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.459);
+    transition: all 0.3s ease 0s;
     cursor: pointer;
-    width: 100px;
-    border-radius: 8px;
-    font-weight: bold;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
 }
 
-/* radio button styling */
-.radioButtons {
-    font-weight: bold;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.btns:hover, td:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
 }
+
+.radio_buttons {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 25px;
+    color: whitesmoke;
+    transform: translate(71%, -300%);
+}
+
+.scramble_title {
+    margin-left: 2%;
+    font-size: 25px;
+}
+
+.footer {
+    text-align: center;
+    transform: translate(-1%, -150%);
+    color: whitesmoke;
+    font-weight: light;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.github {
+    text-decoration: none;
+    font-weight: bolder;
+    color: whitesmoke;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.social_media {
+     transform: translate(0%, -50%);
+     margin-left: 45%;
+     display: inline-block;
+}
+
+.social_media a {
+    color:#fff;
+    background: #3e8da8;
+    border-radius:4px;
+    text-align:center;
+    text-decoration:none;
+    font-family:fontawesome;
+    position: relative;
+    display: inline-block;
+    width:40px;
+    height:28px;
+    padding-top:12px;
+    margin:0 2px;
+    -o-transition:all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+        -webkit-font-smoothing: antialiased;
+}
+  
+.social_media a:hover {
+    background: #47a9ca;
+}
+  
+.social_media a span {
+    color:#666;
+    position:absolute;
+    font-family:sans-serif;
+    bottom:0;
+    left:-25px;
+    right:-25px;
+    padding:5px 7px;
+    z-index:-1;
+    font-size:14px;
+    border-radius:2px;
+    background:#fff;
+    visibility:hidden;
+    opacity:0;
+    -o-transition:all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+  
+.social_media a span:before {
+    content:'';
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+    position:absolute;
+    bottom:-5px;
+    left:40px;
+}
+  
+.social_media a:hover span {
+    bottom:50px;
+    visibility:visible;
+    opacity:1;
+}
+  
+/* font awesome icons */
+.social_media a:nth-of-type(1):before {
+    content:'\f09b';
+}
+
+.social_media a:nth-of-type(2):before {
+    content:'\f0e1';
+}
+.social_media a:nth-of-type(3):before {
+    content:'\f099';
+}
+  
+
+
+  
