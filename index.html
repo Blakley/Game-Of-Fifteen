@@ -1,14 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>15 Puzzle</title>
-        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/45ff755216.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title> Puzzle </title>
     </head>
     <body>
-        <section>
-            <div id="puzzlePosition">
-                <table id = "myPuzzle">
+        <header>
+            <div class="ripple-1"></div>
+            <div class="ripple-2"></div>
+            <div class="ripple-3"></div>
+            <div class="ripple-4"></div>
+            <div class="ripple-5"></div>
+            <nav>
+                <div class = "navbar">
+                    <div class="title"><a href="#">Image Rotation Game</a></div>   
+                </div>
+            </nav>
+            <div class = "puzzle_position">
+                <table id = "puzzle">
                     <tr>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
@@ -35,22 +49,32 @@
                     </tr>
                 </table>
             </div>
-            <div id=buttonPosition>
-                <div class="buttons">
-                    <button id="button1">Reset</button>
-                    <br>
-                    <button id="button2">Scramble</button>
-                </div>
-                <br>
-                <div class = "radioButtons">
-                    <form name = rButtons>
-                        <input type="radio" name = scramble_value value="low">Easy<br>
-                        <input type="radio" name = scramble_value value="medium" checked>Medium<br>
-                        <input type="radio" name = scramble_value value="high">Hard<br>
-                    </form>
-                </div>
+            <div class = "puzzle_buttons">
+                <button class = "btns" id="btn_reset">Reset</button> </br>
+                <button class = "btns" id="btn_scramble">Scramble</button> </br>
+                <button class = "btns" id="btn_rotate90c" onclick = "rotate_clockwise();">90° ↻</button> </br>
+                <button class = "btns" id="btn_rotate180" onclick = "rotate_flip();">180°</button>
             </div>
-        </section>
+            <div class = "radio_buttons">
+                <form name = rButtons>
+                    <input type="radio" name = scramble_value value="low">easy &nbsp;
+                    <input type="radio" name = scramble_value value="medium" checked>medium &nbsp;
+                    <input type="radio" name = scramble_value value="high">hard
+                </form>
+                </br> <a class = "scramble_title">Scramble Difficulty</a>
+            </div>
+
+            <div class="footer">Made with <span style="color: red;">❤
+                </span> by Blakley<br>This project is open source, visit the
+                <a class = "github" href="https://github.com/blakley/" target="_blank"> repo.</a>
+            </div>
+            <div class = "social_media">
+                <a href="https://github.com/Blakley"><span>Github</span></a>
+                <a href="https://www.linkedin.com/in/anthony-blakley/"><span>LinkedIn</span></a>
+                <a href="https://twitter.com/anthlone"><span>Twitter</span></a>
+            </div>
+        
+        </header>
         <script src="script.js"></script>
     </body>
 </html>
