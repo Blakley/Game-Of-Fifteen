@@ -1,3 +1,6 @@
+// 
+location.reload();
+
 /* Populate initial table */
 table = document.getElementById("puzzle");
 $(function() {
