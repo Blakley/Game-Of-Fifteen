@@ -1,5 +1,10 @@
-// 
-location.reload();
+// fix loading issues
+window.onload = function() {
+    if(!window.location.hash) {
+        window.location = window.location + '#loaded';
+        window.location.reload();
+    }
+}
 
 /* Populate initial table */
 table = document.getElementById("puzzle");
