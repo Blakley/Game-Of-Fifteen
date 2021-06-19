@@ -6,7 +6,7 @@
   <p align="center">
     A game based off the classic fifteen puzzle game with matrix rotations
     <br />
-    <a href="https://blakley.github.io/Image-Rotation/"><strong>Online Demo »</strong></a>
+    <a href="https://blakley.github.io/Image-Rotation/#loaded"><strong>Online Demo »</strong></a>
     <br />
   </p>
 </p>
