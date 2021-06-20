@@ -75,6 +75,13 @@ body  {
     overflow: hidden;
 }
 
+.centered {
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -97,12 +104,12 @@ nav {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 1%;
 }
 
-.puzzle_position {
-    transform: translate(0%, 35%);
-    margin-left: 30%;
-}
 
 table { border-collapse: separate; border-spacing: 5px; }
 
@@ -139,7 +146,11 @@ button {
 }
 
 .puzzle_buttons {
-    transform: translate(75%, -130%);
+    position: fixed;
+    top: 25%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+
 }
 
 .btns {
@@ -171,7 +182,11 @@ button {
     font-weight: bold;
     font-size: 25px;
     color: whitesmoke;
-    transform: translate(71%, -300%);
+    position: fixed;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .scramble_title {
@@ -180,8 +195,11 @@ button {
 }
 
 .footer {
+    left: 50%;
+    bottom:60px;
+    position:absolute;
+    transform: translate(-50%, -50%);
     text-align: center;
-    transform: translate(-1%, -150%);
     color: whitesmoke;
     font-weight: light;
     font-family: 'Roboto Mono', monospace;
@@ -191,78 +209,78 @@ button {
     text-decoration: none;
     font-weight: bolder;
     color: whitesmoke;
-    font-family: 'Roboto Mono', monospace;
 }
 
 .social_media {
-     transform: translate(0%, -50%);
-     margin-left: 45%;
-     display: inline-block;
+    left: 50%;
+    bottom:0px;
+    position:absolute;
+    transform: translate(-50%, -50%);
+    display: inline-block;
 }
 
 .social_media a {
-    color:#fff;
-    background: #3e8da8;
-    border-radius:4px;
-    text-align:center;
-    text-decoration:none;
-    font-family:fontawesome;
-    position: relative;
-    display: inline-block;
-    width:40px;
-    height:28px;
-    padding-top:12px;
-    margin:0 2px;
-    -o-transition:all .5s;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    transition: all .5s;
-        -webkit-font-smoothing: antialiased;
+   color:#fff;
+   background: #3e8da8;
+   border-radius:4px;
+   text-align:center;
+   text-decoration:none;
+   font-family:fontawesome;
+   position: relative;
+   display: inline-block;
+   width:40px;
+   height:28px;
+   padding-top:12px;
+   margin:0 2px;
+   -o-transition:all .5s;
+   -webkit-transition: all .5s;
+   -moz-transition: all .5s;
+   transition: all .5s;
+       -webkit-font-smoothing: antialiased;
 }
-  
+ 
 .social_media a:hover {
-    background: #47a9ca;
+   background: #3e8da8;
 }
-  
+ 
 .social_media a span {
-    color:#666;
-    position:absolute;
-    font-family:sans-serif;
-    bottom:0;
-    left:-25px;
-    right:-25px;
-    padding:5px 7px;
-    z-index:-1;
-    font-size:14px;
-    border-radius:2px;
-    background:#fff;
-    visibility:hidden;
-    opacity:0;
-    -o-transition:all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    -moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+   color:#666;
+   position:absolute;
+   font-family:sans-serif;
+   bottom:0;
+   left:-25px;
+   right:-25px;
+   padding:5px 7px;
+   z-index:-1;
+   font-size:14px;
+   border-radius:2px;
+   background:#fff;
+   visibility:hidden;
+   opacity:0;
+   -o-transition:all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+   -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+   -moz-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+   transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-  
+ 
 .social_media a span:before {
-    content:'';
-    width: 0; 
-    height: 0; 
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid #fff;
-    position:absolute;
-    bottom:-5px;
-    left:40px;
+   content:'';
+   width: 0; 
+   height: 0; 
+   border-left: 5px solid transparent;
+   border-right: 5px solid transparent;
+   border-top: 5px solid #fff;
+   position:absolute;
+   bottom:-5px;
+   left:40px;
 }
-  
+ 
 .social_media a:hover span {
-    bottom:50px;
-    visibility:visible;
-    opacity:1;
+   bottom:50px;
+   visibility:visible;
+   opacity:1;
 }
-  
-/* font awesome icons */
+
 .social_media a:nth-of-type(1):before {
     content:'\f09b';
 }
@@ -273,7 +291,3 @@ button {
 .social_media a:nth-of-type(3):before {
     content:'\f099';
 }
-  
-
-
-  
