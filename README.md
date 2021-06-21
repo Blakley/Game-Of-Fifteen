@@ -6,13 +6,16 @@
   <p align="center">
     A game based off the classic fifteen puzzle game with matrix rotations
     <br />
-    <a href="https://blakley.github.io/Image-Rotation/"><strong>Online Demo »</strong></a>
+    <a href="https://blakley.github.io/Image-Rotation/"><strong>«—— Try It ——»</strong></a>
     <br />
   </p>
 </p>
 
+<p align="center">
+  <img src="https://media.giphy.com/media/HzGbxkR1s5nHM0x5G0/giphy.gif" width=500>
+</p>
 
-## How To Play
+# How To Play
 <p align="left">
   <p align="left">
     After scambling the numbers, slide the numbers back in order from 1 to 15 
@@ -21,8 +24,17 @@
     <br />
   </p>
 </p>
-<br />
 
-<p align="center">
-  <img src="https://media.giphy.com/media/HzGbxkR1s5nHM0x5G0/giphy.gif" width=500>
-</p>
+## Getting Started
+
+These instructions will give you a copy of the project up and running on
+your local machine for development and testing purposes.
+
+## Deployment
+
+Simply open the ```index.html``` file in your browser.
+
+## Built With
+
+  - [Languages](https://www.w3schools.com/html/html_scripts.asp) - HTML, CSS, and JavaScript
+
