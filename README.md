@@ -1,4 +1,3 @@
-<!-- PROJECT LOGO -->
 <br />
 <p align="center">
   <h3 align="center"> Image Rotation Game </h3>
