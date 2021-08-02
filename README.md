@@ -1,37 +1,26 @@
-<br />
-<p align="center">
-  <h3 align="center"> Image Rotation Game </h3>
+# Game Of Fifteen
 
-  <p align="center">
-    A game based off the classic fifteen puzzle game with matrix rotations
-    <br />
-    <a href="https://blakley.github.io/Image-Rotation/"><strong>«—— Try It ——»</strong></a>
-    <br />
-  </p>
-</p>
+Browser-based sliding puzzle game
 
+## Demo
 <p align="center">
+  <a href="https://blakley.github.io/Image-Rotation/"><strong>«—— Try It ——»</strong></a>
   <img src="https://media.giphy.com/media/HzGbxkR1s5nHM0x5G0/giphy.gif" width=500>
 </p>
 
-# How To Play
-<p align="left">
-  <p align="left">
-    After scambling the numbers, slide the numbers back in order from 1 to 15 
-    <br />
-    For an increased difficulty, rotate the image and or adjust the scramble difficulty.
-    <br />
-  </p>
-</p>
+## Game Instructions
+* After scambling the numbers, slide the numbers back in order from 1 to 15 
 
-## Getting Started
+## Features
 
-These instructions will give you a copy of the project up and running on
-your local machine for development and testing purposes.
+* Standard game settings
+* Implemented board rotation for increased difficulty
 
 ## Deployment
 
-Simply open the ```index.html``` file in your browser.
+Edit the `script.js` and `index.html` files to modify the game.
+To deploy, simply open the `index.html` file in your browser.
+
 
 ## Built With
 
