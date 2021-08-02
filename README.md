@@ -2,9 +2,8 @@
 
 Browser-based sliding puzzle game
 
-## Demo
-<p align="center">
-  <a href="https://blakley.github.io/Image-Rotation/"><strong>«—— Try It ——»</strong></a>
+## Demo <a href="https://blakley.github.io/Image-Rotation/"><strong>Play Here</strong></a>
+<p align="">
   <img src="https://media.giphy.com/media/HzGbxkR1s5nHM0x5G0/giphy.gif" width=500>
 </p>
 
