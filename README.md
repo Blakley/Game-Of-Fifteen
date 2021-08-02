@@ -2,9 +2,9 @@
 
 Browser-based sliding puzzle game
 
-## Demo <a href="https://blakley.github.io/Image-Rotation/"><strong>Play Here</strong></a>
+## Demo <a href="https://blakley.github.io/Game-Of-Fifteen/"><strong>Play Here</strong></a>
 <p align="">
-  <img src="https://media.giphy.com/media/HzGbxkR1s5nHM0x5G0/giphy.gif" width=500>
+  <img src="https://media.giphy.com/media/oJuosHO073SCs9EgRK/giphy.gif" width=500>
 </p>
 
 ## Game Instructions
